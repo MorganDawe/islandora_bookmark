@@ -785,6 +785,8 @@ function islandora_bookmark_fedora_repository_object_form(array $form, array &$f
         }
         $form['islandora_bookmark']['add_bookmarks'] = array(
           '#type' => 'select',
+          '#title' => t('Add Bookmark'),
+          '#title_display' => 'invisible',
           '#options' => $options,
         );
         $form['islandora_bookmark']['add_button'] = array(
